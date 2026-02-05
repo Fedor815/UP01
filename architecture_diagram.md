@@ -1,3 +1,6 @@
+# Архитектура системы
+
+```mermaid
 graph TB
     subgraph "Frontend Layer"
         FE[React Frontend<br/>localhost:3000]
@@ -25,7 +28,7 @@ graph TB
     PARSER --> WEB
     BOT --> API
     BOT --> TG
-    API -.-> CACHE
+    API --> CACHE
     
     style FE fill:#e1f5fe
     style API fill:#f3e5f5
